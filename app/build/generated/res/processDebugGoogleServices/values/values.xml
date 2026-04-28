@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">932005121362</string>
+    <string name="google_api_key" translatable="false">AIzaSyAdCLTc0a1ElmvecHdOM8K2tAwF_842rII</string>
+    <string name="google_app_id" translatable="false">1:932005121362:android:2055a6a7b890fcc551be8b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAdCLTc0a1ElmvecHdOM8K2tAwF_842rII</string>
+    <string name="google_storage_bucket" translatable="false">stockmate-ee388.firebasestorage.app</string>
+    <string name="project_id" translatable="false">stockmate-ee388</string>
+</resources>

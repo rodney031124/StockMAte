@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_fragment_dashboard.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_menu.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_menu.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_alert_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/alert_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-xxxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_activity_login.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/xml_backup_rules.xml.flat",
+        "source": "com.stockmate.app-main-52:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_activity_splash.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/xml_data_extraction_rules.xml.flat",
+        "source": "com.stockmate.app-main-52:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_fragment_sales.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/fragment_sales.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_logo_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/logo_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-xxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_gradient_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/menu_menu_dashboard.xml.flat",
+        "source": "com.stockmate.app-main-52:/menu/menu_dashboard.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_search.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_category.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_category.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_email.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_email.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_activity_dashboard.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_inventory.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_inventory.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_price.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_price.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_add.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_sales.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_sales.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_lock.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_category_icon_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/category_icon_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_fragment_products.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/fragment_products.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_stock_badge_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/stock_badge_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_profit.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_profit.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_back.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_card_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/card_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_logout.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_logout.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_edittext_background.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/edittext_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/layout_item_product.xml.flat",
+        "source": "com.stockmate.app-main-52:/layout/item_product.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_quantity.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_quantity.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_product.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_product.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/drawable_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-52:/drawable/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.stockmate.app-merged_res-50:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-52:/mipmap-hdpi/ic_launcher_round.xml"
+    }
+]
