@@ -12,6 +12,10 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_profit.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\mipmap-xxhdpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\mipmap-xxhdpi\\ic_launcher.xml"
     },
@@ -40,6 +44,10 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_launcher_round.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_menu.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_menu.xml"
     },
@@ -64,6 +72,10 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_delete.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\mipmap-mdpi_ic_launcher.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\mipmap-mdpi\\ic_launcher.xml"
     },
@@ -74,6 +86,10 @@
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_back.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\layout_activity_register.xml.flat",
@@ -96,6 +112,10 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\mipmap-xhdpi\\ic_launcher.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\xml\\data_extraction_rules.xml"
     },
@@ -104,12 +124,24 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_person.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_inventory.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_inventory.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_gradient_background.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\gradient_background.xml"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\layout_fragment_dashboard.xml.flat",
@@ -128,6 +160,14 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\mipmap-xxhdpi\\ic_launcher_round.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_chevron_right.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_chevron_right.xml"
     },
@@ -136,12 +176,16 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\card_background.xml"
     },
     {
+        "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_search.xml"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_sales.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_sales.xml"
     },
     {
-        "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_search.xml.flat",
-        "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_search.xml"
+        "merged": "com.stockmate.app-debug-63:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\layout_activity_record_sale.xml.flat",
@@ -156,8 +200,16 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\layout\\item_low_stock_alert.xml"
     },
     {
-        "merged": "com.stockmate.app-debug-63:/layout_activity_login.xml.flat",
-        "source": "com.stockmate.app-main-65:/layout/activity_login.xml"
+        "merged": "com.stockmate.app-debug-63:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_edittext_background.xml.flat",
@@ -172,12 +224,20 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\drawable\\ic_add.xml"
     },
     {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\mipmap-hdpi_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\mipmap-hdpi\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\layout_fragment_sales.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\layout\\fragment_sales.xml"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_logo_background.xml.flat",
@@ -218,6 +278,10 @@
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\menu_menu_dashboard.xml.flat",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\menu\\menu_dashboard.xml"
+    },
+    {
+        "merged": "com.stockmate.app-debug-63:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.stockmate.app-main-65:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-debug-63:\\drawable_ic_launcher.xml.flat",

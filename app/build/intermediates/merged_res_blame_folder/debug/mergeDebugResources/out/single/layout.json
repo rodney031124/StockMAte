@@ -12,6 +12,10 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\layout\\activity_product_details.xml"
     },
     {
+        "merged": "com.stockmate.app-mergeDebugResources-62:/layout/activity_add_product.xml",
+        "source": "com.stockmate.app-main-65:/layout/activity_add_product.xml"
+    },
+    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-mergeDebugResources-62:\\layout\\item_low_stock_alert.xml",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\layout\\item_low_stock_alert.xml"
     },
@@ -40,12 +44,12 @@
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\layout\\activity_record_sale.xml"
     },
     {
-        "merged": "com.stockmate.app-mergeDebugResources-62:/layout/activity_login.xml",
-        "source": "com.stockmate.app-main-65:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-mergeDebugResources-62:\\layout\\fragment_sales.xml",
         "source": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-main-65:\\layout\\fragment_sales.xml"
+    },
+    {
+        "merged": "com.stockmate.app-mergeDebugResources-62:/layout/fragment_dashboard.xml",
+        "source": "com.stockmate.app-main-65:/layout/fragment_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\rotsh\\.gradle\\daemon\\8.13\\com.stockmate.app-mergeDebugResources-62:\\layout\\item_product.xml",

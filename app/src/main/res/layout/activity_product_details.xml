@@ -28,6 +28,22 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+            <!-- Product Image Placeholder / Icon -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/pricing_card_bg"
+                android:backgroundTint="#F0F0F0">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_product"
+                    android:contentDescription="Product Icon" />
+            </FrameLayout>
+
             <!-- Main Product Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"

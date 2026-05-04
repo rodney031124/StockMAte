@@ -1,90 +1,137 @@
 package com.stockmate.app.data.repository;
 
-import android.os.Handler;
-import android.os.Looper;
+import androidx.annotation.NonNull;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.stockmate.app.data.models.Product;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class ProductRepository {
-    private static List<Product> mockProducts = new ArrayList<>();
+    private final DatabaseReference productsRef;
     
-    static {
-        mockProducts.add(createProduct("Coca Cola", "Beverages", 10.00, 15.00, 5));
-        mockProducts.add(createProduct("Chips - Simba", "Snacks", 5.00, 10.00, 3));
-        mockProducts.add(createProduct("White Bread", "Bakery", 10.00, 15.00, 12));
-        mockProducts.add(createProduct("Milk 1L", "Dairy", 15.00, 22.00, 8));
-        mockProducts.add(createProduct("Coca Cola 500ml", "Beverages", 8.50, 12.00, 24));
-        mockProducts.add(createProduct("Airtime R5", "Vouchers", 5.00, 5.00, 50));
-    }
-    
-    private static Product createProduct(String name, String category, double buyingPrice, double sellingPrice, int quantity) {
-        Product product = new Product(name, category, sellingPrice, quantity, "");
-        product.setId(UUID.randomUUID().toString());
-        product.setBuyingPrice(buyingPrice);
-        return product;
+    public ProductRepository() {
+        // Initialize Firebase Realtime Database
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        productsRef = database.getReference("products");
     }
     
     public interface FirestoreCallback<T> {
         void onSuccess(T result);
         void onFailure(Exception e);
     }
-    
-    public void getAllProducts(FirestoreCallback<List<Product>> callback) {
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            callback.onSuccess(new ArrayList<>(mockProducts));
-        }, 500);
-    }
-    
-    public void getLowStockProducts(int threshold, FirestoreCallback<List<Product>> callback) {
-        List<Product> lowStock = new ArrayList<>();
-        for (Product p : mockProducts) {
-            if (p.getQuantity() < threshold) {
-                lowStock.add(p);
-            }
-        }
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            callback.onSuccess(lowStock);
-        }, 300);
-    }
 
+    public interface RealtimeUpdateCallback {
+        void onDataChanged(List<Product> products);
+        void onError(Exception e);
+    }
+    
+    // Listen for real-time updates for all products
+    public void observeAllProducts(RealtimeUpdateCallback callback) {
+        productsRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                List<Product> products = new ArrayList<>();
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    Product product = postSnapshot.getValue(Product.class);
+                    if (product != null) {
+                        product.setId(postSnapshot.getKey());
+                        products.add(product);
+                    }
+                }
+                callback.onDataChanged(products);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                callback.onError(error.toException());
+            }
+        });
+    }
+    
     public void addProduct(Product product, FirestoreCallback<String> callback) {
-        product.setId(UUID.randomUUID().toString());
-        mockProducts.add(product);
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            callback.onSuccess(product.getId());
-        }, 300);
+        String productId = productsRef.push().getKey();
+        if (productId != null) {
+            product.setId(productId);
+            productsRef.child(productId).setValue(product)
+                .addOnSuccessListener(aVoid -> callback.onSuccess(productId))
+                .addOnFailureListener(callback::onFailure);
+        }
     }
 
     public void updateProduct(Product product, FirestoreCallback<Void> callback) {
-        for (int i = 0; i < mockProducts.size(); i++) {
-            if (mockProducts.get(i).getId().equals(product.getId())) {
-                mockProducts.set(i, product);
-                break;
-            }
+        if (product.getId() != null) {
+            productsRef.child(product.getId()).setValue(product)
+                .addOnSuccessListener(aVoid -> {
+                    if (callback != null) callback.onSuccess(null);
+                })
+                .addOnFailureListener(e -> {
+                    if (callback != null) callback.onFailure(e);
+                });
         }
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            if (callback != null) callback.onSuccess(null);
-        }, 300);
     }
 
     public void deleteProduct(String productId, FirestoreCallback<Void> callback) {
-        mockProducts.removeIf(p -> p.getId().equals(productId));
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            callback.onSuccess(null);
-        }, 300);
+        productsRef.child(productId).removeValue()
+            .addOnSuccessListener(aVoid -> callback.onSuccess(null))
+            .addOnFailureListener(callback::onFailure);
     }
 
     public void updateProductQuantity(String productId, int newQuantity, FirestoreCallback<Void> callback) {
-        for (Product p : mockProducts) {
-            if (p.getId().equals(productId)) {
-                p.setQuantity(newQuantity);
-                break;
+        productsRef.child(productId).child("quantity").setValue(newQuantity)
+            .addOnSuccessListener(aVoid -> {
+                if (callback != null) callback.onSuccess(null);
+            })
+            .addOnFailureListener(e -> {
+                if (callback != null) callback.onFailure(e);
+            });
+    }
+
+    // Single-fetch method for legacy support or specific needs
+    public void getAllProducts(FirestoreCallback<List<Product>> callback) {
+        productsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                List<Product> products = new ArrayList<>();
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    Product product = postSnapshot.getValue(Product.class);
+                    if (product != null) {
+                        product.setId(postSnapshot.getKey());
+                        products.add(product);
+                    }
+                }
+                callback.onSuccess(products);
             }
-        }
-        new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            if (callback != null) callback.onSuccess(null);
-        }, 300);
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                callback.onFailure(error.toException());
+            }
+        });
+    }
+
+    public void getLowStockProducts(int threshold, FirestoreCallback<List<Product>> callback) {
+        productsRef.orderByChild("quantity").endAt(threshold).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                List<Product> products = new ArrayList<>();
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    Product product = postSnapshot.getValue(Product.class);
+                    if (product != null) {
+                        product.setId(postSnapshot.getKey());
+                        products.add(product);
+                    }
+                }
+                callback.onSuccess(products);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                callback.onFailure(error.toException());
+            }
+        });
     }
 }

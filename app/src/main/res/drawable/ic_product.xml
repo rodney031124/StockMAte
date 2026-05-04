@@ -4,7 +4,24 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <!-- Box Side Left -->
     <path
-        android:fillColor="#000000"
-        android:pathData="M20,8l-8,5L4,8V6l8,5l8,-5V8z M12,2L4,7v10l8,5l8,-5V7L12,2z M6,17.21V9.11l6,3.75l6,-3.75v8.1l-6,3.75L6,17.21z" />
+        android:fillColor="#8D6E63"
+        android:pathData="M3,18L3,8L12,12L12,22L3,18Z" />
+    <!-- Box Side Right -->
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M21,18L21,8L12,12L12,22L21,18Z" />
+    <!-- Box Top -->
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M12,12L3,8L12,4L21,8L12,12Z" />
+    <!-- Box Flap Shadow -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M12,12L12,22L13,22L13,12Z" />
+    <!-- Tape -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M11,11L11,5L13,4L13,10L11,11Z" />
 </vector>
